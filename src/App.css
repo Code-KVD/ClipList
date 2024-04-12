@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+/* App component */
+
+.App{
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+
+
+/* card component. */
+
+.todo-card{
+  background-color: rgb(231, 237, 244);
+  height: 200px;
+  width : 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  margin-bottom: 2rem;
+   margin-left: 10px;
+}
+
+.todo-title{
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.todo-description{
+  margin:20px 10px 20px 15px;
+}
+
+
+.done-button{
+  margin-right: 10px;
+  height: 30px;
+  padding: 5px;
+  background-color: rgb(9, 134, 9);
+  color: rgb(229, 228, 228);
+  border : none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.delete-button{
+  border : none;
+  height: 30px;
+  padding: 5px;
+  background-color: rgb(210, 52, 28);
+  color: rgb(229, 228, 228);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* TodoList component. */
+
+.todo-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 25%;
+  margin-right: 25%;
+  position: relative;
+}
+
+
+/* TodoForm component */
+
+.modal-backdrop{
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.todo-form img{
+  position: relative;
+  bottom: 3.2rem;
+  left: 15rem;
+  cursor: pointer;
+}
+
+.todo-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e3e9eceb;
+  padding: 4.5rem;
+  border-radius: 4px;
+  z-index: 1001;
+}
+.form-title, .form-desc{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.form-title label, .form-desc label{
+  margin-bottom: 2px;
+  font-size: 16px;
+}
+
+.form-title input, .form-desc input{
+ height: 28px;
+ width: 25rem;
+ padding: 2px;
+ border: 1px solid transparent;
+ border-radius: 3px;
+}
+
+.create-button{
+  width: 7rem;
+  height: 3rem;
+  margin-top: 25px;
+  border: none;
+  border-radius: 2.5px;
+  background-color: rgb(61, 161, 39);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.plus-icon{
+  margin-top: 3.5rem;
+  cursor: pointer;
+}
